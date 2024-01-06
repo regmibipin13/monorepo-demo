@@ -1,6 +1,6 @@
-# nx-next-shadcn-ui-starter
+# inline-australia/monorepo
 
-This is a starter repository for integrating [shadcn/ui](https://github.com/shadcn/ui) with [Next.js](https://nextjs.org/) in an [Nx](https://nx.dev/) monorepo.
+This is monorepo for all code of inline-aus
 
 Detailed instructions for configuring and setting up this repository can be found in a tutorial on [Medium.com](https://medium.com/@patrickvaler/how-to-get-started-with-shadcn-ui-and-next-js-within-a-nx-monorepo-57908f48b4ef). Explore the tutorial for comprehensive insights into the repository's setup, ensuring a smooth and informed integration process.
 
@@ -17,13 +17,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 ### Installation
 
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/patrickvaler/nx-next-shadcn-ui-starter.git
-   ```
-
-2. Install npm dependencies
+1. Install npm dependencies
 
    ```bash
    npm install
@@ -45,22 +39,16 @@ Use the `add` command to add components and dependencies to your project:
 npx shadcn-ui@latest add [component]
 ```
 
-You will be presented with a list of components to choose from:
+Check the `shadcn/ui` [cli docs](https://ui.shadcn.com/docs/cli) for further information.
+
+## Add new app
 
 ```bash
-Which components would you like to add? › Space to select. A to toggle all.
-Enter to submit.
-
-◯  accordion
-◯  alert
-◯  alert-dialog
-◯  aspect-ratio
-◯  avatar
-◯  badge
-◯  button
-◯  calendar
-◯  card
-◯  checkbox
+`nx g @nx/next:app my-app`
 ```
 
-Check the `shadcn/ui` [cli docs](https://ui.shadcn.com/docs/cli) for further information.
+Copy contents of below files from an existing app to the new app
+
+1. `tailwind.config.js`
+2. `postcss.config.js`
+3. `global.css`
