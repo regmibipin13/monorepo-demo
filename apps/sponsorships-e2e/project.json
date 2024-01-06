@@ -1,0 +1,29 @@
+{
+  "name": "sponsorships-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/sponsorships-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/sponsorships-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "sponsorships:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "sponsorships:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/sponsorships-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["sponsorships"]
+}
