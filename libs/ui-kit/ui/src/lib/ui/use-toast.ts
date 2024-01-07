@@ -1,6 +1,7 @@
 // Inspired by react-hot-toast library
-import * as React from 'react';
+'use client';
 
+import React, { useState, useEffect } from 'react';
 import type { ToastActionElement, ToastProps } from './toast';
 
 const TOAST_LIMIT = 1;
@@ -167,9 +168,9 @@ function toast({ ...props }: Toast) {
 }
 
 function useToast() {
-  const [state, setState] = React.useState<State>(memoryState);
+  const [state, setState] = useState<State>(memoryState);
 
-  React.useEffect(() => {
+  useEffect(() => {
     listeners.push(setState);
     return () => {
       const index = listeners.indexOf(setState);

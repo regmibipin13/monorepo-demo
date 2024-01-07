@@ -19,6 +19,8 @@
       "@backend/*": ["libs/backend/src/*"],
       "@context": ["libs/context/src/index.ts"],
       "@context/*": ["libs/context/src/*"],
+      "@ui-kit/components": ["libs/ui-kit/components/src/index.ts"],
+      "@ui-kit/components/*": ["libs/ui-kit/components/src/*"],
       "@ui-kit/ui": ["libs/ui-kit/ui/src/index.ts"],
       "@ui-kit/ui/*": ["libs/ui-kit/ui/src/*"],
       "@ui-kit/util": ["libs/ui-kit/util/src/index.ts"],
