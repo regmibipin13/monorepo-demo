@@ -17,6 +17,8 @@
     "paths": {
       "@backend": ["libs/backend/src/index.ts"],
       "@backend/*": ["libs/backend/src/*"],
+      "@context": ["libs/context/src/index.ts"],
+      "@context/*": ["libs/context/src/*"],
       "@ui-kit/ui": ["libs/ui-kit/ui/src/index.ts"],
       "@ui-kit/ui/*": ["libs/ui-kit/ui/src/*"],
       "@ui-kit/util": ["libs/ui-kit/util/src/index.ts"],
